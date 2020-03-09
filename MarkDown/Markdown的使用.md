@@ -2,7 +2,6 @@
 + ## 关于工具  
     > 所谓工欲善其事，必先利其器。想要快速方便的编写Markdown文档一款好的编辑器是十分重要的。由于我对目前市面上Markdown编辑器知之甚少，并且听闻[visual studio code](https://code.visualstudio.com/Download) 具有良好的插件支持以下简称vs Code，因此使用vs Code作为此项目Markdown编辑器（不知道github对vs Code编辑的Markdown文件支持多少）。  
     > 工具：visual studio code 安装 Markdown All in One 插件
----
 + ## 关于语法
      相信网上已经有很多关于Markdown的学习资料。本文是对[菜鸟教程](https://www.runoob.com/markdown)中的说明进行部分摘抄和加入一些自己的使用方法。  
      语法主要是以符号+空格+文字的格式。  
@@ -48,8 +47,8 @@
     >    |单元格|单元格|
     >    |单元格|单元格| 
     > ```  
-    |表头|表头|表头|
-    |:-|:-:|-:|
-    |单元格|单元格|单元格|
-    |单元格|单元格|单元格|
+    > |表头|表头|表头|
+    > |:-|:-:|-:|
+    > |单元格|单元格|单元格|
+    > |单元格|单元格|单元格|
 ---
