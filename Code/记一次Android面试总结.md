@@ -39,4 +39,4 @@
 同时可以调用Animator.addUpdateListener来监听估值器在每次刷新所产生的值，并且调用invalidate方法来刷新界面（在View中）。  
 说到invalidate方法就不得不说requestLayout、invalidate、postInvalidate三个方法的区别了。  
 > ### **2. requestLayout、invalidate、postInvalidate三个方法的区别**  
-同样经过查询，我先说我的认知，大家都知道View的绘制流程有3个步骤：Measure、Layout、Draw。requestLayout刷新为从Measure开始，而invalidate只是重新执行Draw,postInvalide相同，只不过postInvalidate是从异步线程调用ui线程使用，原理是使用handler,今天先到这里。
+同样经过查询，我先说我的认知，大家都知道View的绘制流程有3个步骤：Measure、Layout、Draw。当子view调用requestLayout时，子view会调用父容器的requestLayout会遍历所有的控件进行从Measure开始的重绘。而invalidate是标记当前view的需要重绘的部分，并且在需要重绘的时候只执行onDraw方法。
