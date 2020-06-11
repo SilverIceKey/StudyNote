@@ -16,3 +16,5 @@
         maven { url 'https://maven.aliyun.com/repository/jcenter' }//jcenter
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }//gradle-plugin
 ```
+
+### 11. Realm kotlin 出现 错误: 无法从最终xxxmodel进行继承的错误解决，将model变为open
