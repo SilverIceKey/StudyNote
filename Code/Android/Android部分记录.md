@@ -14,4 +14,5 @@
 maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }//google()
 maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }  //central仓和jcenter仓的聚合仓
 maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}//jcenter()
-```
+```  
+### 11. Realm kotlin 出现 错误: 无法从最终xxxmodel进行继承的错误解决，将model变为open
