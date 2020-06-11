@@ -11,7 +11,8 @@
 ### 9. Recyclerview中如果不设置isLayoutFrozen为true则列表的空白部分点击无效。如果设置为true则会出现Glide图片设置的Size偏小，暂时的解决，调用Recyclerview的viewTreeObserver冰添加onGlobalLayoutListener，同时在设置时使用延时设置，目前使用延时100ms无问题。犹豫Imageview高度为wrap_content，因此受回收影响滑动会出现界面跳动。 
 ### 10. Android Studio gradle 阿里云镜像 [详情](https://help.aliyun.com/document_detail/102512.html?spm=a2c40.aliyun_maven_repo.0.0.361830549jTnxB)
 ```
-maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }//google()
-maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }  //central仓和jcenter仓的聚合仓
-maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}//jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google' }//google
+        maven { url 'https://maven.aliyun.com/repository/public/' }//google、jcenter
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }//jcenter
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }//gradle-plugin
 ```
