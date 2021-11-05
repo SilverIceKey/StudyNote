@@ -1,0 +1,5 @@
+# View相关  
+View创建完成之后会执行onAttachedToWindow方法去绑定界面,然后开始调用绘制流程  
+View的绘制流程如下：
+先调用onMeasure测量view的大小再调用onDraw绘制,如果是ViewGroup则会在onMeasure之后调用onLayout,在ViewGroup的onLayout中,ViewGroup会循环调用子View的绘制流程会后再进行排版.  
+
