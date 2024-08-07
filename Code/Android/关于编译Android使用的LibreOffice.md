@@ -17,7 +17,7 @@ sudo apt-get install -y build-essential perl python3 libtool autoconf automake \
                         libclucene-dev libcups2-dev libfontconfig1-dev \
                         libgconf2-dev libgstreamer-plugins-base1.0-dev \
                         libgstreamer1.0-dev libgtk-3-dev libharfbuzz-dev \
-                        libxml2-utils libxslt1-dev m4 nasm openjdk-8-jdk \
+                        libxml2-utils libxslt1-dev m4 nasm openjdk-11-jdk \
                         g++ git zip bison flex libcppunit-dev libpoppler-dev \
                         libpoppler-private-dev libcairo2-dev libxinerama-dev \
                         libgl1-mesa-dev libglu1-mesa-dev libfontconfig1-dev \
@@ -111,3 +111,6 @@ make
 
 目前到此能正常进入编译，然后最后会因为gradle的版本和jdk的版本不兼容问题报错，建议使用jdk11测试。先溜。
 
+---
+
+依赖安装的openjdk-8-jdk改为openjdk-11-jdk
